@@ -1,0 +1,26 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  &--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--circle {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #6C85CA;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: rotate 1s linear infinite;
+  }
+
+  &--text {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,24 @@
+// import { useQuery } from '@apollo/client';
+// import { useEffect } from 'react';
+// import { useDispatch } from 'react-redux';
+
+// import { GET_SUMMARY } from "../services/summary";
+// import { setHasError, setIsLoading, setSummary } from "../slices/summary";
+
+// const useSummary = () => {
+//   const dispatch = useDispatch();
+
+//   useEffect(() => {
+    // const {
+    //   loading: isLoading,
+    //   error: hasError ,
+    //   data: { wealthSummary: summary = [] } = {}
+    // } = useQuery(GET_SUMMARY);
+
+//     dispatch(setSummary(wealthSummary));
+//     dispatch(setHasError(!!error));
+//     dispatch(setIsLoading(loading));
+//   }, [dispatch])
+// };
+
+// export default useSummary;
