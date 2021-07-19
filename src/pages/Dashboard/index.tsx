@@ -22,8 +22,6 @@ const Dashboard = () => {
 
   const { profitability, gain, cdi, total = 0 } = useMemo(() => (summary[0] || {}), [summary]);
 
-  console.log('>>>', isLoading)
-
   const renderContent = () => {
     if (hasError) {
       return 'Algo deu errado por aqui. Tente novamente em alguns minutos.';
